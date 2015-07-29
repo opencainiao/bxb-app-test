@@ -87,7 +87,7 @@ public class ClientAdd {
 		//
 
 		List<NameValuePair> formparams = new ArrayList<NameValuePair>();
-		formparams.add(new BasicNameValuePair("userid", userid));
+		formparams.add(new BasicNameValuePair("user_id", userid));
 		formparams.add(new BasicNameValuePair("data", clientsStr));
 
 		return formparams;
@@ -114,7 +114,9 @@ public class ClientAdd {
 			client.setAnnual_income_personal(25);
 			client.setAnnual_income_personal_type("2");
 			client.setCareer_type("1");
-			client.setClient_name("测试用户_" + i);
+			if (i%2 == 0){
+				client.setClient_name("测试用户_" + i);
+			}
 			client.setCompany("中国农业银行xxxx");
 			client.setCompany_nature("1");
 			client.setConstellation("12");
@@ -243,8 +245,8 @@ public class ClientAdd {
 
 	public static void main(String[] args) {
 
-		String url = "http://182.92.114.61:8080/bxb/app/client/add";
-		// String url = "http://localhost:8080/bxb/app/client/add";
+//		String url = "http://182.92.114.61:8080/bxb/app/client/add";
+		 String url = "http://localhost:8080/bxb/app/client/add";
 		post(url);
 	}
 }
