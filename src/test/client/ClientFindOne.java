@@ -53,9 +53,10 @@ public class ClientFindOne {
 	public static void main(String[] args) {
 
 		// String url = "http://182.92.114.61:8080/bxb/app/client/add";
-		String url = "http://localhost:8080/bxb/app/client/55b82dbbcaf8c0570f9f7a4a";
+		String url = "http://localhost:8080/bxb/app/client/55b9d36b7327331f641ff278";
 		findOne(url);
 
+		System.out.println("|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
 		System.out.println("用户的所有客户信息如下");
 		findAllByUserId();
 	}
