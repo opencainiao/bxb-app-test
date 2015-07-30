@@ -35,6 +35,7 @@ public class ClientFindOne {
 		CloseableHttpClient httpClient = HttpClients.createDefault();
 
 		Map<String, String> params = makeParams();
+		params.put("last_op_time", "2015-07-30 16:50:55");
 
 		String result = HpptGetUtil.doGet(httpClient, url, params, "UTF-8");
 
