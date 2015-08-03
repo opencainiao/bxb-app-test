@@ -31,8 +31,12 @@ import util.JSONHelper;
  */
 public class ClientUpdateBase {
 
+<<<<<<< HEAD
 	
 	private static String userid = "55b08c1d6a94f8b336a4a43d";
+=======
+	private static String userid = "55b08c3d6a94f8b336a4a43d";
+>>>>>>> origin/master
 	private static String client_id = "55b9d4787327331f64005b2a";
 
 	public static void post(String url) {
