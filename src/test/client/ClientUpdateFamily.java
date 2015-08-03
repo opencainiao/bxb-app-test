@@ -191,6 +191,7 @@ public class ClientUpdateFamily {
 
 		addresses.add(address);
 
+		
 		address = new Address();
 		address.setType_value("66");
 		address.setType_name("公司");
