@@ -54,7 +54,7 @@ public class ClientFindOne {
 	public static void main(String[] args) {
 
 		// String url = "http://182.92.114.61:8080/bxb/app/client/add";
-		String url = "http://localhost:8080/bxb/app/client/55b9d36b7327331f641ff278";
+		String url = "http://localhost:8080/bxb/app/client/55b9d4787327331f64005b2a";
 		findOne(url);
 
 		System.out.println("|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");

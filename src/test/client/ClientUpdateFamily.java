@@ -29,7 +29,7 @@ import util.JSONHelper;
  * @author NBQ
  *
  */
-public class ClientUpdateBase {
+public class ClientUpdateFamily {
 
 	private static String userid = "55b08c1d6a94f8b336a4a43d";
 	private static String client_id = "55b9d4787327331f64005b2a";
@@ -85,7 +85,7 @@ public class ClientUpdateBase {
 		List<NameValuePair> formparams = new ArrayList<NameValuePair>();
 		formparams.add(new BasicNameValuePair("user_id", userid));
 		formparams.add(new BasicNameValuePair("data", clientStr));
-		formparams.add(new BasicNameValuePair("part_flg", "0"));
+		formparams.add(new BasicNameValuePair("part_flg", "1"));
 
 		return formparams;
 	}
@@ -100,40 +100,40 @@ public class ClientUpdateBase {
 		Client client = new Client();
 
 		client.setBirth_date("1990-03-08");
-		client.setBirth_ages("88");
-		client.setBlood_group("88");
-		client.setBoy_num(88);
+		client.setBirth_ages("66");
+		client.setBlood_group("66");
+		client.setBoy_num(-1);
 		client.setAge_group("A");
 		client.setAnnual_income_family(36.30);
-		client.setAnnual_income_family_type("88");
+		client.setAnnual_income_family_type("66");
 		client.setAnnual_income_personal(288);
-		client.setAnnual_income_personal_type("88");
-		client.setCareer_type("88");
+		client.setAnnual_income_personal_type("66");
+		client.setCareer_type("66");
 		client.setClient_name("测试修改用户88");
 		client.setCompany("中国农业银行xxxx");
-		client.setCompany_nature("88");
+		client.setCompany_nature("66");
 		client.setConstellation("32");
 		client.setContact_attention("mmmmmmmmmmmmm");
 		client.setContact_type("A");
-		client.setEducation_type("88");
+		client.setEducation_type("66");
 		client.setFamily_financial_standing("A");
-		client.setFamily_income_feature("88");
-		client.setGirl_num(88);
-		client.setIntroducer_closeness("88");
+		client.setFamily_income_feature("66");
+		client.setGirl_num(-2);
+		client.setIntroducer_closeness("66");
 		client.setIntroducer_evaluation("mmmmmmmmmmmmm");
 		client.setIntroducer_name("mmmmmmmmmmmmm");
-		client.setIntroducer_relationship("88");
-		client.setJob_level("88");
-		client.setJob_position("88");
-		client.setMarital_status("88");
+		client.setIntroducer_relationship("66");
+		client.setJob_level("66");
+		client.setJob_position("66");
+		client.setMarital_status("66");
 		client.setOwner_user_id(userid);
-		client.setPdp_type("88");
+		client.setPdp_type("66");
 		client.setRegion_code("3_33");
-		client.setRegion_type("88");
+		client.setRegion_type("66");
 		client.setRegion_name("wfwfwfwfwfwf");
-		client.setSex("88");
-		client.setSource_type("88");
-		client.setTrade_type("88");
+		client.setSex("66");
+		client.setSource_type("66");
+		client.setTrade_type("66");
 		client.setWedding_date("06-30");
 
 		createAddress(client);
@@ -160,7 +160,7 @@ public class ClientUpdateBase {
 		phones.add(phone);
 
 		phone = new Phone();
-		phone.setType_value("88");
+		phone.setType_value("66");
 		phone.setType_name("公司");
 		phone.setPhone_number("010-68822xxxx");
 
@@ -192,7 +192,7 @@ public class ClientUpdateBase {
 		addresses.add(address);
 
 		address = new Address();
-		address.setType_value("88");
+		address.setType_value("66");
 		address.setType_name("公司");
 		address.setProvince(1);
 		address.setProvince_name("北京");
@@ -224,7 +224,7 @@ public class ClientUpdateBase {
 		emails.add(email);
 
 		email = new Email();
-		email.setType_value("88");
+		email.setType_value("66");
 		email.setType_name("公司");
 		email.setEmail("298980981@qq.com");
 
