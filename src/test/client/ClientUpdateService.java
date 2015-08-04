@@ -20,12 +20,12 @@ import model.Client;
 import util.JSONHelper;
 
 /****
- * 测试修改客户来源信息
+ * 测试修改客户服务信息
  * 
  * @author NBQ
  *
  */
-public class ClientUpdateSource {
+public class ClientUpdateService {
 
 	private static String userid = "55b08c1d6a94f8b336a4a43d";
 	private static String client_id = "55b9d4787327331f64005b2a";
@@ -78,7 +78,7 @@ public class ClientUpdateSource {
 		List<NameValuePair> formparams = new ArrayList<NameValuePair>();
 		formparams.add(new BasicNameValuePair("user_id", userid));
 		formparams.add(new BasicNameValuePair("data", clientStr));
-		formparams.add(new BasicNameValuePair("part_flg", "4"));
+		formparams.add(new BasicNameValuePair("part_flg", "6"));
 
 		return formparams;
 	}
@@ -91,43 +91,48 @@ public class ClientUpdateSource {
 	private static Client makeClient() {
 
 		Client client = new Client();
+		
+		List<String> is = new ArrayList<String>();
+		is.add("1");
+		is.add("2");
 
 		client.setBirth_date("1990-03-08");
-		client.setBirth_ages("source");
-		client.setBlood_group("source");
+		client.setBirth_ages("service");
+		client.setBlood_group("service");
 		client.setBoy_num(-1);
-		client.setAge_group("source");
+		client.setAge_group("service");
 		client.setAnnual_income_family(66.66);
-		client.setAnnual_income_family_type("source_B");
+		client.setAnnual_income_family_type("service_B");
 		client.setAnnual_income_personal(33.33);
-		client.setAnnual_income_personal_type("source_A");
-		client.setCareer_type("source");
-		client.setClient_name("source");
-		client.setCompany("source");
-		client.setCompany_nature("source");
-		client.setConstellation("32");
+		client.setAnnual_income_personal_type("service_A");
+		client.setCareer_type("service");
+		client.setClient_name("service");
+		client.setCompany("service");
+		client.setCompany_nature("service");
+		client.setConstellation("");
 		client.setContact_attention("注意先打电话提前联系");
-		client.setContact_type("source_AA");
-		client.setEducation_type("source");
-		client.setFamily_financial_standing("source_BB");
-		client.setFamily_income_feature("source_AA");
+		client.setContact_type("service_AA");
+		client.setEducation_type("service");
+		client.setFamily_financial_standing("service_BB");
+		client.setFamily_income_feature("service_AA");
 		client.setGirl_num(-2);
-		client.setIntroducer_closeness("SOURCE_QMD");
+		client.setIntroducer_closeness("service_QMD");
 		client.setIntroducer_evaluation("憨厚 老实");
 		client.setIntroducer_name("介绍人_李四");
-		client.setIntroducer_relationship("SOURCE_B");
-		client.setJob_level("source");
-		client.setJob_position("source");
-		client.setMarital_status("source");
+		client.setIntroducer_relationship("service_B");
+		client.setInteresting_service(is);
+		client.setJob_level("service");
+		client.setJob_position("service");
+		client.setMarital_status("service");
 		client.setOwner_user_id(userid);
-		client.setPdp_type("source");
-		client.setRegion_code("source");
-		client.setRegion_type("source");
-		client.setRegion_name("source");
-		client.setSex("source");
-		client.setSource_type("SOURCE_A");
-		client.setTrade_type("source");
-		client.setWedding_date("source");
+		client.setPdp_type("service");
+		client.setRegion_code("service");
+		client.setRegion_type("service");
+		client.setRegion_name("service");
+		client.setSex("service");
+		client.setSource_type("service_A");
+		client.setTrade_type("service");
+		client.setWedding_date("service");
 
 		return client;
 	}

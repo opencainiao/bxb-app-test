@@ -100,40 +100,40 @@ public class ClientUpdateBase {
 		Client client = new Client();
 
 		client.setBirth_date("1990-03-08");
-		client.setBirth_ages("88");
-		client.setBlood_group("88");
-		client.setBoy_num(88);
+		client.setBirth_ages("222222");
+		client.setBlood_group("222222");
+		client.setBoy_num(222222);
 		client.setAge_group("A");
 		client.setAnnual_income_family(36.30);
-		client.setAnnual_income_family_type("88");
+		client.setAnnual_income_family_type("222222");
 		client.setAnnual_income_personal(288);
-		client.setAnnual_income_personal_type("88");
-		client.setCareer_type("88");
+		client.setAnnual_income_personal_type("222222");
+		client.setCareer_type("222222");
 		client.setClient_name("测试修改用户88");
 		client.setCompany("中国农业银行xxxx");
-		client.setCompany_nature("88");
+		client.setCompany_nature("222222");
 		client.setConstellation("32");
 		client.setContact_attention("mmmmmmmmmmmmm");
 		client.setContact_type("A");
-		client.setEducation_type("88");
+		client.setEducation_type("222222");
 		client.setFamily_financial_standing("A");
-		client.setFamily_income_feature("88");
-		client.setGirl_num(88);
-		client.setIntroducer_closeness("88");
+		client.setFamily_income_feature("222222");
+		client.setGirl_num(222222);
+		client.setIntroducer_closeness("222222");
 		client.setIntroducer_evaluation("mmmmmmmmmmmmm");
 		client.setIntroducer_name("mmmmmmmmmmmmm");
-		client.setIntroducer_relationship("88");
-		client.setJob_level("88");
-		client.setJob_position("88");
-		client.setMarital_status("88");
+		client.setIntroducer_relationship("222222");
+		client.setJob_level("222222");
+		client.setJob_position("222222");
+		client.setMarital_status("222222");
 		client.setOwner_user_id(userid);
-		client.setPdp_type("88");
+		client.setPdp_type("222222");
 		client.setRegion_code("3_33");
-		client.setRegion_type("88");
+		client.setRegion_type("222222");
 		client.setRegion_name("wfwfwfwfwfwf");
-		client.setSex("88");
-		client.setSource_type("88");
-		client.setTrade_type("88");
+		client.setSex("222222");
+		client.setSource_type("222222");
+		client.setTrade_type("222222");
 		client.setWedding_date("06-30");
 
 		createAddress(client);
@@ -154,15 +154,15 @@ public class ClientUpdateBase {
 
 		Phone phone = new Phone();
 		phone.setType_value("1");
-		phone.setType_name("个人");
-		phone.setPhone_number("188010207211");
+		phone.setType_name("个人1111");
+		phone.setPhone_number("18801020721111111");
 
 		phones.add(phone);
 
 		phone = new Phone();
-		phone.setType_value("88");
-		phone.setType_name("公司");
-		phone.setPhone_number("010-68822xxxx");
+		phone.setType_value("222222");
+		phone.setType_name("公司1111");
+		phone.setPhone_number("010-68822xxxx111111");
 
 		phones.add(phone);
 
@@ -180,27 +180,27 @@ public class ClientUpdateBase {
 
 		Address address = new Address();
 		address.setType_value("1");
-		address.setType_name("个人");
+		address.setType_name("个人111");
 		address.setProvince(1);
-		address.setProvince_name("北京");
+		address.setProvince_name("北京111");
 		address.setCity(13);
-		address.setCity_name("市辖区");
+		address.setCity_name("市辖区111");
 		address.setDistrict(388);
-		address.setDistrict_name("东城");
-		address.setDetail_address("xx街xx号");
+		address.setDistrict_name("东城111");
+		address.setDetail_address("xx街xx号111");
 
 		addresses.add(address);
 
 		address = new Address();
-		address.setType_value("88");
-		address.setType_name("公司");
+		address.setType_value("222222");
+		address.setType_name("公司111");
 		address.setProvince(1);
-		address.setProvince_name("北京");
+		address.setProvince_name("北京111");
 		address.setCity(13);
-		address.setCity_name("市辖区");
+		address.setCity_name("市辖区111");
 		address.setDistrict(388);
-		address.setDistrict_name("西城");
-		address.setDetail_address("xx街xx号");
+		address.setDistrict_name("西城111");
+		address.setDetail_address("xx街xx号111");
 
 		addresses.add(address);
 
@@ -218,15 +218,15 @@ public class ClientUpdateBase {
 
 		Email email = new Email();
 		email.setType_value("1");
-		email.setType_name("个人");
-		email.setEmail("288662xxx@qq.com");
+		email.setType_name("个人111");
+		email.setEmail("288662xxx@qq.com11");
 
 		emails.add(email);
 
 		email = new Email();
-		email.setType_value("88");
-		email.setType_name("公司");
-		email.setEmail("298980981@qq.com");
+		email.setType_value("222222");
+		email.setType_name("公司111");
+		email.setEmail("298980981@qq.com11");
 
 		emails.add(email);
 
